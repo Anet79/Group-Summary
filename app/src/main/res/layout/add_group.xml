@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ConstraintLayout_main"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_animation">
+
+
+        <ImageView
+            android:id="@+id/sign_up_IMG_back1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+<!--            <androidx.appcompat.widget.AppCompatImageButton-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/ic_add_photo_camera"-->
+
+<!--                android:baselineAlignBottom="true"-->
+
+<!--                android:gravity="center" />-->
+
+
+            <FrameLayout
+                android:id="@+id/profile_FRM_nav"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <!--    <com.google.android.material.imageview.ShapeableImageView-->
+                <!--        android:id="@+id/drawer_IMG_myprofile"-->
+                <!--        android:layout_width="wrap_content"-->
+                <!--        android:layout_height="wrap_content"-->
+                <!--        android:src="@mipmap/ic_launcher"-->
+                <!--        />-->
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/signup_FAB_profile_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+
+                    app:elevation="8dp"
+                    app:fabCustomSize="40dp"
+                    app:srcCompat="@drawable/ic_add"
+                    app:tint="@color/white"
+                    app:borderWidth="2dp"
+                    app:useCompatPadding="false" />
+
+                <!--            <com.airbnb.lottie.LottieAnimationView-->
+                <!--                android:id="@+id/animationView"-->
+                <!--                android:layout_width="150dp"-->
+                <!--                android:layout_height="150dp"-->
+                <!--                android:layout_gravity="center_horizontal"-->
+                <!--                android:layout_marginBottom="20dp"-->
+                <!--                app:lottie_autoPlay="true"-->
+                <!--                app:lottie_loop="true"-->
+                <!--                app:lottie_rawRes="@raw/anim_profile_pic"-->
+                <!--                app:lottie_speed="0.5" />-->
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/group_IMG_user"
+                    android:layout_width="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_user"
+                    app:civ_border_color="#B2000000"
+                    app:civ_border_width="3dp"
+                    android:focusable="true" />
+            </FrameLayout>
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/group_EDT_name"
+                style="@style/Widget.MaterialComponents.TabLayout"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:background="@color/fui_transparent"
+                android:hint="Group Name"
+
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+
+                <include layout="@layout/content_user" />
+
+
+                <!--                <com.google.android.material.textfield.TextInputLayout-->
+                <!--                    android:id="@+id/menu"-->
+                <!--                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginBottom="10dp"-->
+                <!--                    android:hint="Select Avatar"-->
+                <!--                    android:textColorHint="@color/black"-->
+                <!--                    app:boxStrokeColor="@color/black"-->
+                <!--                    app:boxStrokeWidth="3dp"-->
+                <!--                    app:hintTextColor="@color/black"-->
+                <!--                    app:startIconDrawable="@drawable/ic_avatar">-->
+
+                <!--                    <AutoCompleteTextView-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:inputType="none" />-->
+
+                <!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+            </LinearLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_group_BTN_add_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:backgroundTint="#CD5CB8"
+
+                android:src="@drawable/ic_right_arrow">
+
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_LAY_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorForBackground"
+
+    tools:context=".fragments.HomeListsFragment">
+
+    <RelativeLayout
+        android:id="@+id/fragment_LAY_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        <com.google.android.material.textview.MaterialTextView-->
+<!--            android:id="@+id/fragment_TXT_1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_above="@id/fragment_TXT_2"-->
+<!--            android:layout_centerHorizontal="true"-->
+
+<!--            android:text="Add Folder"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="40sp"-->
+<!--            android:textStyle="bold" />-->
+
+
+<!--        <com.google.android.material.textview.MaterialTextView-->
+<!--            android:id="@+id/fragment_TXT_2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_above="@id/fragment_IMG_empty"-->
+<!--            android:layout_centerHorizontal="true"-->
+
+
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Do not have folders yet"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:id="@+id/fragment_IMG_empty"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="300dp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:src="@drawable/ic_data_storage" />-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_RECYC_items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:clipToPadding="false"
+            android:paddingBottom="57dp" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

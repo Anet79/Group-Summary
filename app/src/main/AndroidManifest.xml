@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.finalproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_group_summary"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_group_summary_round"
+
+        android:theme="@style/Theme.Fab_Bottom_app_bar">
+
+        <activity
+            android:name=".activities.activity_logo"
+            android:exported="false" />
+
+
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityAddGroup"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityAddFolder"
+            android:exported="false" />
+        <activity android:name=".activities.ActivityUpload"
+            android:exported="false"/>
+        <activity
+            android:name=".activities.ActivityAddFile"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Activity_Sign"
+            android:exported="true"
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:exported="false"/>
+<!--        <activity-->
+<!--            android:name=".activities.Activity_Sign"-->
+<!--            android:exported="false"/>-->
+
+        <service
+            android:name=".FCM.FirebaseMessagingService"
+            android:permission="TODO"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

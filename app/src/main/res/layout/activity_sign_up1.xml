@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorForBackground"
+
+   >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/profile_FRM_nav"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/signup_FAB_profile_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+
+
+                app:elevation="8dp"
+                app:fabCustomSize="40dp"
+                app:srcCompat="@drawable/ic_add"
+                android:backgroundTint="@color/black"
+                app:tint="@color/white"
+                app:borderWidth="2dp"
+
+                app:useCompatPadding="false" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/signup_IMG_user"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_user"
+                app:civ_border_color="#B2000000"
+                app:civ_border_width="3dp" />
+        </FrameLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/form_EDT_name"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/insert_full_name"
+            app:boxBackgroundMode="outline"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/panel_BTN_add"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:backgroundTint="@color/black"
+            app:strokeColor="@color/white"
+            app:iconTint="@color/white"
+            android:text="@string/add"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:icon="@drawable/ic_add_icon" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

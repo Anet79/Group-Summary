@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorForBackground"
+   >
+
+<!--    <com.google.android.material.imageview.ShapeableImageView-->
+<!--        android:id="@+id/panel_IMG_logo"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp"-->
+
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        android:scaleX="2.5"-->
+<!--        android:scaleY="2.5" />-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/panel_PRG_bar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="120dp"
+
+
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/anim_folder_serch"
+        app:lottie_speed="0.5" />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/panel_BTN_login"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/panel_PRG_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/colorForBackground02"
+
+        android:elevation="10dp"
+        app:cornerRadius="6dp"
+
+        android:text="@string/phone_login"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:elevation="10dp"
+        app:icon="@drawable/ic_login_phone" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/panel_PRG_bar_1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/panel_BTN_login"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/file_folder"
+        app:lottie_speed="0.5" />
+
+
+
+
+</RelativeLayout>

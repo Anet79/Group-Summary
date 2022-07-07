@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/colorForBackground01"
+    android:fitsSystemWindows="true"
+    android:layoutDirection="rtl">
+
+    <FrameLayout
+        android:id="@+id/profile_FRM_nav"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/navigation_header_container_FAB_profile_pic"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="right|bottom"-->
+<!--            android:backgroundTint="@color/orangeColorAnimation"-->
+<!--            android:contentDescription="@string/todo"-->
+<!--            app:elevation="8dp"-->
+<!--            app:fabCustomSize="30dp"-->
+<!--            app:srcCompat="@drawable/ic_baseline_edit"-->
+<!--            app:tint="@color/white"-->
+<!--            app:useCompatPadding="false" />-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/header_IMG_user"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_user"
+            app:civ_border_color="#B2000000"
+            app:civ_border_width="3dp" />
+
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/header_BAR_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            app:indicatorColor="@color/colorForBackground" />
+
+    </FrameLayout>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/header_TXT_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_FRM_nav"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="8dp"
+        android:text="My Name Is"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

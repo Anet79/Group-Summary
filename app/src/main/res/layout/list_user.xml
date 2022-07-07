@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardBackgroundColor="@color/fui_transparent"
+        android:elevation="7dp"
+
+        android:clickable="true"
+
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            >
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/user_IMG_user_picture"
+
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/ic_user"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="4dp"
+                >
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/user_LBL_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="4dp"
+                    android:text="User Name"
+
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/user_LBL_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="055-012-3456"
+                    android:textColor="#020202"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+<!--            <androidx.appcompat.widget.AppCompatImageButton-->
+<!--                android:id="@+id/user_IMG_add"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+
+<!--                android:baselineAlignBottom="true"-->
+<!--                android:adjustViewBounds="true"-->
+
+<!--                android:background="@drawable/ic_add"-->
+<!--                 />-->
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+               android:layout_marginLeft="170dp" >
+
+            </RadioButton>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</RelativeLayout>

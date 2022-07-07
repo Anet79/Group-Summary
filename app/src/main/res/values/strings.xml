@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_bottom_navigation">activity_bottom_navigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!--    Titles-->
+    <string name="insert_full_name">Insert your name</string>
+    <string name="insert_File_name">Insert File Name</string>
+    <string name="myGroups">My groups</string>
+
+    <!--    Buttons-->
+    <string name="phone_login">Enter Your Phone Number</string>
+    <string name="upload">UPLOAD</string>
+    <string name="add">ADD</string>
+</resources>
