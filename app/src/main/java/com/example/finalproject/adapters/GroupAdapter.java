@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide;
 import com.example.finalproject.R;
 import com.example.finalproject.callbacks.GroupListClicked;
 import com.example.finalproject.objects.Group;
+import com.google.android.material.imageview.ShapeableImageView;
 import com.google.android.material.textview.MaterialTextView;
 
 import java.util.ArrayList;
@@ -36,7 +37,7 @@ public class GroupAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_group, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_group_1, parent, false);
         return new ListViewHolder(view);
     }
 
@@ -66,7 +67,7 @@ public class GroupAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
 
     private class ListViewHolder extends RecyclerView.ViewHolder {
-        public AppCompatImageView group_IMG_image;
+        public ShapeableImageView group_IMG_image;
         public MaterialTextView group_LBL_title;
         public MaterialTextView group_LBL_participants;
 

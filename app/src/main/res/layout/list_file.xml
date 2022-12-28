@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
 
 
-        app:cardBackgroundColor="@color/colorForBackground02"
+        app:cardBackgroundColor="@color/bar3"
         android:elevation="7dp"
 
 
@@ -57,7 +57,7 @@
                     android:id="@+id/list_file_LBL_created_date"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="dd/mm/yyyy"
+                    android:text="9/7/2022"
                     android:textColor="#020202"
                     android:textSize="10sp" />
 

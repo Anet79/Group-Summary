@@ -122,24 +122,7 @@ public class ActivityAddFolder extends AppCompatActivity {
                         Log.w("pttt", "Error adding Category document", e);
                     }
                 });
-//        db.collection(Keys.FIELD_USER_MY_LISTS)
-//                .document(currentList)
-//                .set(folderToStore)
-//                .addOnSuccessListener(new OnSuccessListener<Void>() {
-//                    @Override
-//                    public void onSuccess(Void unused) {
-//                        Log.d("pttt", "DocumentSnapshot Successfully written!");
-//
-//                        //startActivity(new Intent(CreateListActivity.this, MainActivity.class));
-//                        finish();
-//                    }
-//                })
-//                .addOnFailureListener(new OnFailureListener() {
-//                    @Override
-//                    public void onFailure(@NonNull Exception e) {
-//                        Log.w("pttt", "Error adding document", e);
-//                    }
-//                });
+
     }
 
 

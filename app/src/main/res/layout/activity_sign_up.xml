@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorForBackground"
+    android:background="@color/bar2"
    >
 
 <!--    <com.google.android.material.imageview.ShapeableImageView-->
@@ -34,7 +34,6 @@
         app:lottie_speed="0.5" />
 
 
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/panel_BTN_login"
         android:layout_width="wrap_content"
@@ -42,14 +41,14 @@
         android:layout_below="@id/panel_PRG_bar"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:backgroundTint="@color/colorForBackground02"
+        android:backgroundTint="@color/bar3"
 
         android:elevation="10dp"
-        app:cornerRadius="6dp"
-
         android:text="@string/phone_login"
+
         android:textSize="15dp"
         android:textStyle="bold"
+        app:cornerRadius="6dp"
         app:elevation="10dp"
         app:icon="@drawable/ic_login_phone" />
 

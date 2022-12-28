@@ -4,11 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorForBackground"
+    android:background="@color/bar2"
 
    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sigh_up_LRT_header"
+        android:layout_marginBottom="30dp"
+        android:text="Add Your Details"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:fontFamily="@font/fonts_carts"
+        android:textStyle="bold" />
 
     <LinearLayout
+        android:id="@+id/sigh_up_LRT_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -24,7 +37,6 @@
             android:orientation="vertical">
 
 
-
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/signup_FAB_profile_pic"
                 android:layout_width="wrap_content"
@@ -32,12 +44,12 @@
                 android:layout_gravity="right|bottom"
 
 
+                android:backgroundTint="@color/black"
+                app:borderWidth="2dp"
                 app:elevation="8dp"
                 app:fabCustomSize="40dp"
                 app:srcCompat="@drawable/ic_add"
-                android:backgroundTint="@color/black"
                 app:tint="@color/white"
-                app:borderWidth="2dp"
 
                 app:useCompatPadding="false" />
 
@@ -77,15 +89,15 @@
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="20dp"
-            style="@style/Widget.Material3.Button.IconButton"
-            android:backgroundTint="@color/black"
-            app:strokeColor="@color/white"
-            app:iconTint="@color/white"
+            android:backgroundTint="@color/bar3"
+
+            android:fontFamily="@font/fonts_carts"
             android:text="@string/add"
+            android:textColor="@color/black"
             android:textSize="20sp"
-            android:textColor="@color/white"
             android:textStyle="bold"
-            app:icon="@drawable/ic_add_icon" />
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp" />
 
     </LinearLayout>
 

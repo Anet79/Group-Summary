@@ -71,24 +71,25 @@ public class Activity_Sign extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        panel_PRG_bar = findViewById(R.id.panel_PRG_bar);
+      //  panel_PRG_bar = findViewById(R.id.panel_PRG_bar);
         panel_BTN_login = findViewById(R.id.panel_BTN_login);
         db = FirebaseFirestore.getInstance();
-       // panel_PRG_bar.setVisibility(View.VISIBLE);
-       // panel_PRG_bar_1.setVisibility(View.VISIBLE);
-//                        if (UserDataManager.getInstance().getCurrentUser() != null) {
-//                    Log.d("pttt", "User Already Loaded - Splash: " + UserDataManager.getInstance().getCurrentUser().getName());
-//                    Intent intent = new Intent(Activity_Sign.this, MainActivity.class);
-//                         //   UserDataManager.getInstance().loadUserFromDB();
 
-               // }
         if (FirebaseAuth.getInstance().getCurrentUser() != null) {
             loadUserFromDB();
+
         }
 
-//        else {
-//            startActivity(new Intent(this, SignUpActivity.class));
-//        }
+       if (UserDataManager.getInstance().getCurrentUser() != null) {
+           Log.d("pttt", "User Already Loaded - Splash: " + UserDataManager.getInstance().getCurrentUser().getName());
+           Intent intent = new Intent(Activity_Sign.this, MainActivity.class);
+            UserDataManager.getInstance().loadUserFromDB();
+            startActivity(intent);
+            finish();
+        }
+        else {
+            startActivity(new Intent(this, SignUpActivity.class));
+        }
 
         panel_BTN_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,18 +100,20 @@ public class Activity_Sign extends AppCompatActivity {
                         .setTheme(R.style.Theme_Fab_Bottom_app_bar)
                         .build();
                 signInLauncher.launch(signInIntent);
-                Log.d("pttt", "yesss" + "\n");
+                Log.d("pttt", signInLauncher.toString() + "\n");
 
 
 
-//                if(UserDataManager.getInstance().getCurrentUser()!=null){
+//                 if(UserDataManager.getInstance().getCurrentUser()!=null) {
 //                    Log.d("pttt", "User Already Loaded - Splash: " + UserDataManager.getInstance().getCurrentUser().getName().toString());
 //                    UserDataManager.getInstance().loadUserFromDB();
 //                    Intent intent = new Intent(Activity_Sign.this, MainActivity.class);
 //
 //                    startActivity(intent);
 //                    finish();
-                }
+//                }
+
+
 
 
 
@@ -130,6 +133,8 @@ public class Activity_Sign extends AppCompatActivity {
 //                    loadUserFromDB();
 //                }
 
+            }
+
 
         });
 
@@ -148,7 +153,10 @@ public class Activity_Sign extends AppCompatActivity {
                 if (documentSnapshot.exists()) {
                     Log.d("pttt", "DocumentSnapshot data: " + documentSnapshot.getData());
                     User loadedUser = documentSnapshot.toObject(User.class);
-                    //UserDataManager.getInstance().setCurrentUser(loadedUser);
+                    UserDataManager.getInstance().setCurrentUser(loadedUser);
+                    startActivity(new Intent(Activity_Sign.this, MainActivity.class));
+
+
 
                     docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                         @Override
@@ -158,11 +166,12 @@ public class Activity_Sign extends AppCompatActivity {
                                 if (document.exists()) {
                                     ArrayList<String> list = (ArrayList<String>) document.get(Keys.FIELD_USER_MY_LISTS);
                                       loadedUser.setMyListsUIDs(list);
-                                    UserDataManager.getInstance().setCurrentUser(loadedUser);
-                                    startActivity(new Intent(Activity_Sign.this, MainActivity.class));
+
+
 
                                     Log.d("pttt",  document.getId() + " => " + document.get(Keys.FIELD_USER_MY_LISTS));
                                 }
+
                             }
                         }
                     });
@@ -176,19 +185,19 @@ public class Activity_Sign extends AppCompatActivity {
 //                        loadedUser.setMyListsUIDs(tempArr);
 
 
-                    Log.d("pttt", "Activity_Sign: " +loadedUser.toString());
-
+//                    Log.d("pttt", "Activity_Sign: " +loadedUser.toString());
+//                    startActivity(new Intent(Activity_Sign.this, MainActivity.class));
                 } else {
                     Log.d("pttt", "150-No such document");
                     Log.d("pttt", user.getUid());
-//                    startActivity(new Intent(Activity_Sign.this, SignUpActivity.class));
+//
                 }
                // startActivity(new Intent(Activity_Sign.this, MainActivity.class));
 
-              //  startActivity(new Intent(Activity_Sign.this, MainActivity.class));
-
+//                startActivity(new Intent(Activity_Sign.this, MainActivity.class));
+            //  finish();
             }
-            //finish();
+
         });
     }
 
@@ -201,13 +210,15 @@ public class Activity_Sign extends AppCompatActivity {
      */
     private void onSignInResult(FirebaseAuthUIAuthenticationResult result) {
         IdpResponse response = result.getIdpResponse();
-     //   FirebaseAuth.getInstance().getCurrentUser().sendEmailVerification();
-       Log.d("pttt", result.getIdpResponse().getProviderType() + "\n" + result.getIdpResponse());
+//        FirebaseAuth.getInstance().getCurrentUser().sendEmailVerification();
+       Log.d("pttt", "222"+ result.getIdpResponse().getProviderType() + "\n" + result.getIdpResponse());
         if (result.getResultCode() == RESULT_OK) {
             panel_BTN_login.setVisibility(View.INVISIBLE);
-
+          //  panel_PRG_bar.setVisibility(View.VISIBLE);
 
             loadUserFromDB();
+            startActivity(new Intent(Activity_Sign.this, MainActivity.class));
+
             finish();
 
         } else {

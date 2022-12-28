@@ -19,16 +19,16 @@
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/drawable/ic_settings.xml" value="0.1" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/font/fonts.xml" value="0.26564102564102565" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/activity_add_file.xml" value="0.13333333333333333" />
-        <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/activity_add_group.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/activity_add_new_file.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/activity_add_new_folder.xml" value="0.1724137931034483" />
+        <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/activity_add_group.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/activity_add_new_file.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/activity_add_new_folder.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/activity_logo.xml" value="0.1" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/activity_menu.xml" value="0.1" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/activity_pdf.xml" value="0.10885416666666667" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/activity_sign.xml" value="0.10054347826086957" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/activity_sign_up.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/activity_sign_up1.xml" value="0.1" />
+        <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/activity_sign_up1.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/activity_splash.xml" value="0.10960144927536232" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/add_group.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/botton_app_bar.xml" value="0.1" />
@@ -43,11 +43,11 @@
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/fragment_notifications.xml" value="0.13500506585612967" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/ic_login_phone.xml" value="0.10054347826086957" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/list_file.xml" value="0.2537878787878788" />
-        <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/list_folder.xml" value="0.3462414578587699" />
+        <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/list_folder.xml" value="0.23013698630136986" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/list_group.xml" value="0.22" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/list_user.xml" value="0.11413043478260869" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/layout/nav_header.xml" value="0.10643115942028986" />
-        <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/menu/bottom_app_bar_menu.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/menu/bottom_app_bar_menu.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/menu/drawer_menu.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Anetg/AndroidStudioProjects/FinalProject2/app/src/main/res/menu/top_app_bar_menu.xml" value="0.10989583333333333" />
@@ -93,5 +93,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>

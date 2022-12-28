@@ -4,29 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorForBackground"
+    android:background="@color/bar2"
 
     >
 
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/createcat_header"
+         android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:backgroundTint="#E1CDB5"
+        android:background="@drawable/circle_shap"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/create_group_BTN_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="3dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:layout_marginStart="25dp"
+            android:background="@null"
+            android:backgroundTint="@null"
+            android:elevation="2dp"
+            android:scaleType="centerCrop"
+
+
+            android:src="@drawable/ic_back_arrow" />
+    </LinearLayout>
+
     <TextView
+        android:layout_above="@+id/createcat_CARD_main"
+
+        android:id="@+id/createcat_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/createcat_CARD_main"
-        android:layout_marginBottom="30dp"
 
-        android:text="Create new folder"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/fonts_carts"
+
+        android:gravity="center"
+        android:text="Add New Folder"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="40sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
+
+
+
+
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/createcat_CARD_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+
         android:elevation="8dp"
-        app:cardBackgroundColor="@color/white"
+        app:cardBackgroundColor="@color/bar3"
         app:cardCornerRadius="6dp"
         app:cardElevation="8dp">
 
@@ -34,16 +72,17 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@color/colorForBackground">
+            >
 
 
             <FrameLayout
                 android:id="@+id/profile_FRM_nav"
-                android:layout_width="match_parent"
+                android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="10dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                >
 
                 <com.google.android.material.progressindicator.CircularProgressIndicator
                     android:id="@+id/createCat_BAR_progress"
@@ -58,12 +97,13 @@
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/createCat_IMG_user"
                     style="@style/MaterialAlertDialog.Material3.Title.Icon.CenterStacked"
-                    android:layout_width="220dp"
-                    android:layout_height="200dp"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
                     android:layout_gravity="center_horizontal"
                     android:focusable="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_data_storage"
+
+                    android:src="@drawable/ic_brown_folder"
                     app:civ_border_color="#B2000000"
                     app:civ_border_width="10dp" />
             </FrameLayout>
@@ -72,41 +112,41 @@
                 android:id="@+id/form_EDT_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Insert file name"
-
-                android:textColorHint="@color/black"
-                app:boxBackgroundColor="#ECE8E8"
+                android:hint="Insert Folder Name:"
                 app:boxBackgroundMode="none"
-                app:boxStrokeColor="@color/white"
+                app:hintTextColor="@color/black"
                 app:errorEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:inputType="text"
 
-                    android:inputType="textPersonName"
-                    android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
+                    android:fontFamily="@font/fonts_carts" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/panel_BTN_create"
 
-                style="@style/Widget.Material3.Button"
+
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="20dp"
-                android:backgroundTint="@color/colorForBackground02"
+                android:backgroundTint="@color/bar3"
 
 
                 android:text="@string/add"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                app:icon="@drawable/ic_add_folder"
-                app:strokeColor="@color/colorForBackground"
-                app:strokeWidth="2dp" />
+                app:strokeColor="@color/black"
+                android:textColor="@color/black"
+                app:strokeWidth="2dp"
+
+
+             />
 
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>

@@ -8,6 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorGradientStart">#ffaf7b</color>
+    <color name="bar">#7D9D9C</color>
+    <color name="bar1">#576F72</color>
+    <color name="bar2">#E4DCCF</color>
+    <color name="bar3">#F0EBE3</color>
     <color name="colorForBackground">#CEAB93</color>
     <color name="colorForBackground01">#AD8B73</color>
     <color name="colorForBackground02">#E3CAA5</color>

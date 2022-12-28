@@ -11,7 +11,7 @@
         android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/colorForBackground01"
+        android:backgroundTint="@color/bar3"
 
 
         android:elevation="7dp"
@@ -36,7 +36,7 @@
                 android:layout_height="match_parent"
                 android:padding="4dp"
                 android:layout_marginStart="5dp"
-                android:src="@drawable/ic_data_storage"
+                android:src="@drawable/ic_brown_folder"
 
                 />
 

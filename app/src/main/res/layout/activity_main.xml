@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:animateLayoutChanges="true"
-        android:background="@color/colorForBackground"
+        android:background="@color/bar2"
         android:fitsSystemWindows="true">
 
 
@@ -26,12 +26,13 @@
                 android:id="@+id/panel_Toolbar_Top"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@color/colorForBackground01"
+
                 app:layout_scrollFlags="scroll|enterAlways|snap"
                 app:menu="@menu/bottom_app_bar_menu"
                 app:navigationIcon="@drawable/ic_back_arrow_vector"
                 app:navigationIconTint="@color/black"
                 app:title="My Files"
+
                 app:titleCentered="true"
                 app:titleTextColor="@color/black"
 
@@ -88,7 +89,7 @@
                     android:backgroundTint="#00FFFFFF"
 
                     app:iconSize="40dp"
-                    app:iconTint="@color/white" />
+                    app:iconTint="#9F8772" />
 
 
                 <com.google.android.material.imageview.ShapeableImageView
@@ -120,7 +121,7 @@
                     android:layout_height="0dp"
                     android:layout_marginTop="20dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/white"
+
                     android:elevation="5dp"
 
                     android:insetLeft="5dp"
@@ -144,7 +145,8 @@
                     android:insetTop="5dp"
                     android:insetRight="5dp"
                     android:insetBottom="5dp"
-                    android:text="All my groups"
+                    android:text="Groups"
+                    android:fontFamily="@font/fonts_carts"
                     android:textAlignment="center"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -156,7 +158,6 @@
                     android:layout_height="0dp"
                     android:layout_marginTop="20dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/white"
                     android:elevation="5dp"
 
                     android:insetLeft="5dp"
@@ -179,8 +180,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:background="@color/white"
-            android:backgroundTint="@color/colorForBackground01"
+            android:backgroundTint="#9F8772"
+
             app:fabCradleMargin="10dp"
             app:fabCradleRoundedCornerRadius="15dp"
 
@@ -191,13 +192,13 @@
             android:id="@+id/toolbar_FAB_add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorForBackground02"
+            android:backgroundTint="@color/bar3"
 
             android:src="@drawable/ic_add"
             app:borderWidth="0dp"
             app:layout_anchor="@id/panel_AppBar_bottom"
             app:maxImageSize="30dp"
-            app:tint="@color/black" />
+            />
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

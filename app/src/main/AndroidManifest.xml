@@ -23,9 +23,7 @@
 
 
 
-        <activity
-            android:name=".activities.MainActivity"
-            android:exported="false" />
+
         <activity
             android:name=".activities.ActivityAddGroup"
             android:exported="false" />
@@ -38,9 +36,12 @@
             android:name=".activities.ActivityAddFile"
             android:exported="false" />
         <activity
+            android:name=".activities.SignUpActivity"
+            android:exported="false"/>
+        <activity
             android:name=".activities.Activity_Sign"
             android:exported="true"
-           >
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -49,11 +50,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.SignUpActivity"
-            android:exported="false"/>
-<!--        <activity-->
-<!--            android:name=".activities.Activity_Sign"-->
-<!--            android:exported="false"/>-->
+            android:name=".activities.MainActivity"
+            android:exported="true" />
 
         <service
             android:name=".FCM.FirebaseMessagingService"

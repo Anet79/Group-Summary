@@ -187,7 +187,7 @@ public class FolderListsFragment extends Fragment {
                              if(newFolder.getCreatesUID().equals(dataManager.getCurrentListUid()))
                                     folderList.add(newFolder);
                             Log.d("pttt", dataManager.getCurrentListUid());
-                            //adapter_my_items.notifyItemInserted(0);
+
                             break;
                         }
                         case MODIFIED: {

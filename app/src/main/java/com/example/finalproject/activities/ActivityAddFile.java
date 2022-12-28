@@ -62,7 +62,7 @@ public class ActivityAddFile extends AppCompatActivity {
         findViews();
         initButtons();
         Calendar c = Calendar.getInstance();
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
+        SimpleDateFormat sdf = new SimpleDateFormat("9/7/2022");
         String strDate = sdf.format(c.getTime());
 
 

@@ -91,8 +91,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Check if User loaded successfully after login, if not might be problem with sign up -> will transfer to complete sign up
         if (UserDataManager.getInstance().getCurrentUser() != null) {
-            Log.d("pttt", "User Loaded Name From Login: " + UserDataManager.getInstance().getCurrentUser().getName().toString());
-        } else {
+           Log.d("pttt", "User Loaded Name From Login: " + UserDataManager.getInstance().getCurrentUser().getName().toString());
+        }
+        else {
             Log.d("pttt", "Not Loaded User");
             startActivity(new Intent(MainActivity.this, SignUpActivity.class));
             finish();

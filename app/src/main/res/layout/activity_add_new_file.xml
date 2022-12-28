@@ -4,10 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorForBackground"
+    android:background="@color/bar2"
 
     >
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/panel_PRG_pdf"
+        android:layout_width="match_parent"
 
+        android:layout_marginTop="100dp"
+        android:layout_height="60dp"
+        android:foregroundGravity="center"
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/amin_pdf_file"
+        app:lottie_speed="0.5" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -16,53 +29,62 @@
         android:orientation="vertical">
 
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
-            android:layout_margin="15dp"
-            android:src="@drawable/ic_pdf"/>
 
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:id="@+id/form_EDT_name"-->
-<!--            android:layout_width="250dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="@string/insert_File_name"-->
-<!--            app:boxBackgroundMode="outline"-->
-<!--            app:errorEnabled="true">-->
+        <!--        <androidx.appcompat.widget.AppCompatImageView-->
+        <!--            android:layout_width="150dp"-->
+        <!--            android:layout_height="150dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_margin="15dp"-->
+        <!--          />-->
 
-<!--            <androidx.appcompat.widget.AppCompatEditText-->
-<!--                android:id="@+id/add_file_EDT_file_name"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:inputType="textPersonName"-->
-<!--                android:textSize="16sp" />-->
-<!--        </com.google.android.material.textfield.TextInputLayout>-->
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/form_EDT_name"-->
+        <!--            android:layout_width="250dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:hint="@string/insert_File_name"-->
+        <!--            app:boxBackgroundMode="outline"-->
+        <!--            app:errorEnabled="true">-->
+
+        <!--            <androidx.appcompat.widget.AppCompatEditText-->
+        <!--                android:id="@+id/add_file_EDT_file_name"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:inputType="textPersonName"-->
+        <!--                android:textSize="16sp" />-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
         <EditText
             android:id="@+id/add_file_EDT_file_name"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:background="@color/bar3"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:hint="CHOOSE FILE"
+            android:textColor="#9F8772"
+
+            android:textSize="25sp"
 
             />
 
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/add_file_BTN_add"
+            style="@style/Widget.Material3.Button.IconButton"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="20dp"
-            style="@style/Widget.Material3.Button.IconButton"
-            android:backgroundTint="@color/black"
-            app:strokeColor="@color/white"
-            app:iconTint="@color/white"
-            app:iconPadding="5dp"
-            android:text="@string/upload"
-            android:textSize="20sp"
+            android:backgroundTint="#9F8772"
+            android:text="UPLOAD"
             android:textColor="@color/white"
+            android:textSize="20sp"
             android:textStyle="bold"
-            app:icon="@drawable/ic_upload" />
+            app:icon="@drawable/ic_upload"
+            app:iconPadding="5dp"
+            app:iconTint="@color/white"
+            app:strokeColor="@color/white" />
 
     </LinearLayout>
 

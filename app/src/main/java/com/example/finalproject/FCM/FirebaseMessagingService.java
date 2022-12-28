@@ -12,7 +12,6 @@ import android.os.Vibrator;
 import androidx.core.app.NotificationCompat;
 
 import com.example.finalproject.activities.MainActivity;
-import com.example.finalproject.activities.SplashActivity;
 import com.google.firebase.messaging.RemoteMessage;
 
 import java.util.Map;

@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="250dp"
-    android:background="@color/colorForBackground01"
+    android:background="#9F8772"
     android:fitsSystemWindows="true"
-    android:layoutDirection="rtl">
+  >
 
     <FrameLayout
         android:id="@+id/profile_FRM_nav"
@@ -61,6 +61,7 @@
         android:text="My Name Is"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:fontFamily="@font/fonts_carts"
         android:textSize="18sp"
         android:textStyle="bold" />
 </RelativeLayout>
