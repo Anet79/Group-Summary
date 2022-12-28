@@ -1,12 +1,6 @@
 # Group-Summary
 
-# Grandmas_Secrets
-Android Share Recipes Application
-
- <p align="center">
-<img src="https://firebasestorage.googleapis.com/v0/b/grandma-s-secrets.appspot.com/o/Screens%2Flarg.png?alt=media&token=9efb0ef5-d19c-4843-9352-2b1a3d93a85d" width="500" height="500" />
-</p>
-
+Android Share Summaries Application
 
 ## :iphone: Screenshots
 >
@@ -21,20 +15,25 @@ Android Share Recipes Application
 >|<img src="https://user-images.githubusercontent.com/69468995/209845010-ee62a884-fbcd-4adc-9519-7e4a4ba8d252.png?alt=media&token=1064c6b6-60a6-47b4-8944-416b0214df87" width="250" height="500" border="10"/>|<img src="https://user-images.githubusercontent.com/69468995/209845169-10e9617f-3126-422d-b25d-ab87e803eed4.png?alt=media&token=221ea707-fe58-4214-9d20-8f1e0860b838" width="250" height="500" border="10"/>|
 >
 >
->:spaghetti: <ins>**Folders view:**
->|Folders List View  |Add Folder  |Sgow Recip Info  |
->|--|--|--|
->|<img src="https://firebasestorage.googleapis.com/v0/b/grandma-s-secrets.appspot.com/o/Screens%2FRecipesList.png?alt=media&token=7c273885-9498-46ac-bfef-38aaf46b4535" width="250" height="500" border="10"/>|<img src="https://firebasestorage.googleapis.com/v0/b/grandma-s-secrets.appspot.com/o/Screens%2FAddRecipe.png?alt=media&token=f5bf83b1-f3ad-47d9-adee-33d9990577f2" width="250" height="500" border="10"/>|<img src="https://firebasestorage.googleapis.com/v0/b/grandma-s-secrets.appspot.com/o/Screens%2FRecipView.png?alt=media&token=bb45b95e-483d-4080-a36c-ea40411a9a55" width="250" height="500" border="10"/>|
+>:open_file_folder: <ins>**Folders view:**
+>|Folders List View  |Add Folder  |
+>|--|--|
+>|<img src="https://user-images.githubusercontent.com/69468995/209882952-5031fb5d-5674-476a-9751-ebcdc7e70dc4.png" width="250" height="500" border="10"/>|<img src="https://user-images.githubusercontent.com/69468995/209883013-9e925b3d-b7e7-4e96-a536-9cf956a8640a.png?alt=media&token=f5bf83b1-f3ad-47d9-adee-33d9990577f2" width="250" height="500" border="10"/>|
+>
+>:page_facing_up: <ins>**Files view:**
+>|Files List View  |Add File  |
+>|--|--|
+>|<img src="https://user-images.githubusercontent.com/69468995/209883180-1bcc22c5-6a87-468e-8e1f-a80279ab0068.png?alt=media&token=7c273885-9498-46ac-bfef-38aaf46b4535" width="250" height="500" border="10"/>|<img src="https://user-images.githubusercontent.com/69468995/209883196-e474f9bb-5c6d-45f1-b505-640b6bfc9ce7.png?alt=media&token=f5bf83b1-f3ad-47d9-adee-33d9990577f2" width="250" height="500" border="10"/>|
 >
 >:ok_woman: <ins>**User Profile:**
 >|Profile  |
 >|--|
->|<img src="https://firebasestorage.googleapis.com/v0/b/grandma-s-secrets.appspot.com/o/Screens%2FProfile.png?alt=media&token=b0b97407-52fd-4910-a4d1-956eb894c81c" width="250" height="500" border="10"/>|
+>|<img src="https://user-images.githubusercontent.com/69468995/209883389-e31245b8-7619-4327-8cf8-832068fdcb3d.png?alt=media&token=b0b97407-52fd-4910-a4d1-956eb894c81c" width="250" height="500" border="10"/>|
 >
 >## 	:hammer_and_wrench: Built Using:
 >- Android Studio
 >- Google Firebase
->    - **Database:**  Realtime Firebase
+>    - **Database:**  Cloud Firestore
 >    - **Storage:** Firebase Cloud Storage
 >    - **Authentication:** Firebase Auth Using Phone Number 
 ## Credits:
